@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; }
+    body { font-family: 'Roboto', sans-serif; background: #f2f2f2; }
 
     header {
       background-color: #0b3d91;
-      color: #fff;
+      color: white;
       padding: 1rem 2rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
     }
 
     header img.logo {
-      height: 50px;
+      height: 55px;
     }
 
     nav ul {
@@ -31,26 +31,26 @@
     }
 
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-weight: bold;
     }
 
     .hero {
-      background: url('IMG_7507 2.JPG') no-repeat center center/cover;
+      background: url('Fachada.JPG') no-repeat center center/cover;
       height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
       padding: 2rem;
     }
 
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
@@ -62,16 +62,24 @@
     .btn {
       background-color: #25D366;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 0.9rem 1.6rem;
       text-decoration: none;
-      font-size: 1rem;
-      border-radius: 5px;
+      font-size: 1.1rem;
+      border-radius: 6px;
       font-weight: bold;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
 
     .btn:hover {
       background-color: #1ebe57;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -79,11 +87,10 @@
 
 <header>
   <img src="logo.png" alt="Logo El Roble" class="logo" />
-  <section class="hero" style="background-image: url('Fachada.JPG');">
   <nav>
     <ul>
-      <li><a href="#sobre">Nosotros</a></li>
-       <li><a href="productos_el_roble.html">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="productos_el_roble.html">Productos</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
@@ -91,79 +98,13 @@
 
 <section class="hero">
   <h1>Desde 1971 construyendo contigo</h1>
-  <p>Con todos los hierros.</p>
+  <p>¡Con todos los hierros!</p>
   <a href="https://wa.me/584247231629" class="btn">📲 Escríbenos al WhatsApp</a>
 </section>
-  <section class="promo-banner">
-  <div class="promo-content">
-    <h2>TODOS LOS MATERIALES DE CONSTRUCCIÓN<br>QUE NECESITAS PARA TUS PROYECTOS</h2>
-    <p>Atención de primera, variedad y experiencia... con todos los hierros.</p>
-    <div class="promo-buttons">
-      <a href="LISTA_DE_PRECIOS_ROBLE.pdf" class="btn">📄 Ver Catálogo PDF</a>
-      <a href="https://wa.me/584247231629" class="btn">📲 Escríbenos al WhatsApp</a>
-      <a href="#productos" class="btn">🛠️ Ver productos destacados</a>
-    </div>
-  </div>
-</section>
 
-<style>
-  .promo-banner {
-    background: url('IMG_7507.JPG') no-repeat center center/cover;
-    padding: 5rem 2rem;
-    text-align: center;
-    color: white;
-    position: relative;
-  }
-
-  .promo-banner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-  }
-
-  .promo-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    margin: auto;
-  }
-
-  .promo-content h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-
-  .promo-content p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-  }
-
-  .promo-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .promo-buttons .btn {
-    background-color: #25D366;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease;
-  }
-
-  .promo-buttons .btn:hover {
-    background-color: #1ebe57;
-  }
-</style>
+<footer>
+  Materiales El Roble C.A. — Mérida, Venezuela • +58 424-7231629
+</footer>
 
 </body>
 </html>
