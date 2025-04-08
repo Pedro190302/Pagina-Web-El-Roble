@@ -50,6 +50,67 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
       padding: 2rem;
     }
+    <!-- Sección de Productos Destacados -->
+<section id="productos" class="productos-destacados">
+  <h2>Categorías Destacadas</h2>
+  <div class="grid-productos">
+    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=3" class="card-producto">
+      <img src="https://febeca.com/wp-content/uploads/2021/10/electricidad.png" alt="Electricidad">
+      <span>Electricidad</span>
+    </a>
+    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=5" class="card-producto">
+      <img src="https://febeca.com/wp-content/uploads/2021/10/pinturas.png" alt="Pinturas">
+      <span>Pinturas</span>
+    </a>
+    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=7" class="card-producto">
+      <img src="https://febeca.com/wp-content/uploads/2021/10/herramientas.png" alt="Herramientas">
+      <span>Herramientas</span>
+    </a>
+    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=9" class="card-producto">
+      <img src="https://febeca.com/wp-content/uploads/2021/10/ferreteria.png" alt="Ferretería">
+      <span>Ferretería</span>
+    </a>
+  </div>
+</section>
+
+<style>
+.productos-destacados {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.productos-destacados h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0b3d91;
+}
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.card-producto {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card-producto:hover {
+  transform: scale(1.05);
+}
+.card-producto img {
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+.card-producto span {
+  font-weight: bold;
+}
+</style>
 
     .hero h1 {
       font-size: 3rem;
