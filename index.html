@@ -112,8 +112,29 @@
   font-weight: bold;
 }
 </style>
+  /* Animación de entrada */
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
 
-   
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación de fondo (zoom sutil) */
+.hero {
+  animation: backgroundZoom 15s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundZoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
   </style>
 </head>
 <body>
@@ -129,7 +150,7 @@
   </nav>
 </header>
 
-<section class="hero">
+<section class="hero fade-in">
   <h1>Desde 1971 construyendo contigo</h1>
   <p>¡Con todos los hierros!</p>
   <a href="https://wa.me/584247231629" class="btn">📲 Escríbenos al WhatsApp</a>
