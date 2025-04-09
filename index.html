@@ -52,25 +52,26 @@
       padding: 2rem;
     }
     <!-- Sección de Productos Destacados -->
-<section id="productos" class="productos-destacados">
-  <h2>Categorías Destacadas</h2>
-  <div class="grid-productos">
-    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=3" class="card-producto">
-      <img src="https://febeca.com/wp-content/uploads/2021/10/electricidad.png" alt="Electricidad">
-      <span>Electricidad</span>
-    </a>
-    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=5" class="card-producto">
-      <img src="https://febeca.com/wp-content/uploads/2021/10/pinturas.png" alt="Pinturas">
-      <span>Pinturas</span>
-    </a>
-    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=7" class="card-producto">
-      <img src="https://febeca.com/wp-content/uploads/2021/10/herramientas.png" alt="Herramientas">
-      <span>Herramientas</span>
-    </a>
-    <a href="LISTA_DE_PRECIOS_ROBLE.pdf#page=9" class="card-producto">
-      <img src="https://febeca.com/wp-content/uploads/2021/10/ferreteria.png" alt="Ferretería">
-      <span>Ferretería</span>
-    </a>
+<!-- Sección Productos tipo Febeca -->
+<section class="seccion-productos">
+  <div class="productos-banner">
+    <img src="https://febeca.com/wp-content/uploads/2022/09/productos-scaled.jpg" alt="Banner Productos" />
+    <h2><span>Nuestros</span> productos</h2>
+  </div>
+
+  <div class="productos-lista">
+    <h3>¿Qué ofrecemos?</h3>
+    <ul>
+      <li>Agrícola y jardín</li>
+      <li>Automotriz</li>
+      <li>Baños</li>
+      <li>Cerrajería</li>
+      <li>Electricidad</li>
+      <li>Herramientas</li>
+      <li>Pinturas</li>
+      <li>Ferretería</li>
+    </ul>
+    <a href="LISTA_DE_PRECIOS_ROBLE.pdf" class="btn" target="_blank">📄 Consultar lista de precios</a>
   </div>
 </section>
 
@@ -154,7 +155,65 @@
       0% { background-size: 100%; }
       100% { background-size: 110%; }
     }
-  </style>
+ .seccion-productos {
+  background: #f2f2f2;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.productos-banner {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.productos-banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.productos-banner h2 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  background: rgba(255,255,255,0.85);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #0b3d91;
+}
+
+.productos-banner h2 span {
+  color: black;
+}
+
+.productos-lista h3 {
+  font-size: 2rem;
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.productos-lista ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.productos-lista li {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+ </style>
 </head>
 
  
