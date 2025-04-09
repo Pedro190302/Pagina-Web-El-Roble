@@ -111,30 +111,36 @@
 .card-producto span {
   font-weight: bold;
 }
-</style>
-  /* Animación de entrada */
-.fade-in {
-  animation: fadeIn 1.5s ease-in;
-}
+</style><head>
+  ...
+  <style>
+    /* Estilos base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f2f2f2; }
 
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
+    ...
 
-/* Animación de fondo (zoom sutil) */
-.hero {
-  animation: backgroundZoom 15s ease-in-out infinite alternate;
-}
+    /* Animación de entrada */
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 
-@keyframes backgroundZoom {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 110%;
-  }
-}
+    /* Animación de fondo (zoom sutil) */
+    .hero {
+      animation: backgroundZoom 15s ease-in-out infinite alternate;
+    }
+    @keyframes backgroundZoom {
+      0% { background-size: 100%; }
+      100% { background-size: 110%; }
+    }
+  </style>
+</head>
+
+ 
   </style>
 </head>
 <body>
